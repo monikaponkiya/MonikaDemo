@@ -1,0 +1,23 @@
+<div class="container w-50 mt-5">
+    <h4 class="text-center">Add Your Technical Experience</h4>
+    <div class="register-form">
+        <form [formGroup]="technicalform">
+            <div>
+                <label for="technologyName">Technology Name:</label>
+                <input type="text" class="form-control" id="technologyName" name="technologyName" formControlName="technologyName">
+            </div>
+            <div>
+                <label for="biginner">Biginner:</label>
+                <input type="radio" class="form-control" id="biginner" name="biginner" formControlName="biginner">
+            </div>
+            <div>
+                <label for="mediator">Mediator:</label>
+                <input type="radio" class="form-control" id="mediator" name="mediator" formControlName="mediator">
+            </div>
+            <div>
+                <label for="expert">Expert:</label>
+                <input type="radio" class="form-control" id="expert" name="expert" formControlName="expert">
+            </div>
+        </form>
+    </div>
+</div>

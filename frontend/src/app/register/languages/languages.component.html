@@ -1,0 +1,23 @@
+<div class="container w-50 mt-5">
+    <h4 class="text-center">Add Your Language</h4>
+    <div class="register-form">
+        <form [formGroup]="languageform">
+            <div>
+                <label for="languageName">Language:</label>
+                <input class="form-control" type="text" id="languageName" name="languageName" formControlName="languageName">
+            </div>
+            <div>
+                <label for="read">Read:</label>
+                <input class="form-control" type="checkbox" id="read" name="read" formControlName="read">
+            </div>
+            <div>
+                <label for="write">Write:</label>
+                <input class="form-control" type="checkbox" id="write" name="write" formControlName="write">
+            </div>
+            <div>
+                <label for="speak">Speak:</label>
+                <input class="form-control" type="checkbox" id="speak" name="speak" formControlName="speak">
+            </div>
+        </form>
+    </div>
+</div>

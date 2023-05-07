@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div *ngIf="currentStep === 1">
+        <app-job-application></app-job-application>
+    </div>
+    <div *ngIf="currentStep === 2">
+        <app-education-detail></app-education-detail>
+    </div>
+    <div *ngIf="currentStep === 3">
+        <app-languages></app-languages>
+    </div>
+    <div *ngIf="currentStep === 4">
+        <app-work-experience></app-work-experience>
+    </div>
+    <div *ngIf="currentStep === 5">
+        <app-technical-experience></app-technical-experience>
+    </div>
+    <div *ngIf="currentStep === 6">
+        <app-preferences></app-preferences>
+    </div>
+
+    <div class="nextpre">
+        <button type="button" class="btn btn-primary" *ngIf="currentStep !== 1"
+            (click)="previousStep()">Previous</button> &nbsp;
+        <button type="button" class="btn btn-primary" *ngIf="currentStep !== 6" 
+        (click)="nextStep()">Next</button>&nbsp;
+        <button type="button" class="btn btn-primary" *ngIf="currentStep === 2"
+        (click)="onSubmit()">Submit</button> 
+    </div>
+</div>
